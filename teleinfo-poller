@@ -1,0 +1,8 @@
+#
+# Parameters to be passed to teleinfo-poller
+#
+serial=/dev/ttyAMA0
+
+mysql-pwd=owQjygooL3zD
+
+elapse=50

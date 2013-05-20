@@ -1,0 +1,12 @@
+[Unit]
+Description=Teleinformations EDF/ES
+After=network.target
+
+[Service]
+Type=forking
+PIDFile=/run/teleinfo-poller.pid
+ExecStart=/usr/sbin/teleinfo-poller -d -p /run/teleinfo-poller.pid
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target
