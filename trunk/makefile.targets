@@ -1,0 +1,6 @@
+install:
+	cp teleinfo-poller /usr/sbin/teleinfo-poller
+	-@echo ' '
+
+.PHONY: all clean dependents
+.SECONDARY:
